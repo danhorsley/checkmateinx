@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Router, Route, Switch } from "wouter";
 import ChessPuzzle from "./ChessPuzzle";
 
+
 function Home() {
   const [message, setMessage] = useState("");
 
