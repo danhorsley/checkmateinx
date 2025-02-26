@@ -5,8 +5,9 @@ function Home() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    // Using environment variable would be better in production
-    fetch('http://localhost:8000/api/hello')
+    // Use the current host for API calls in Replit environment
+    const apiUrl = window.location.origin + '/api/hello'
+    fetch(apiUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok')
