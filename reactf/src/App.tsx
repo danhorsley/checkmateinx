@@ -57,6 +57,7 @@ function PuzzleDetail({ params }: { params: { id: string } }) {
 }
 
 function App() {
+
   return (
     <Router>
       <Switch>
