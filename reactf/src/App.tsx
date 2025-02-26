@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
+import { Route, Switch } from 'wouter'
 
-function App() {
+function Home() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
@@ -28,6 +29,15 @@ function App() {
         </p>
       </div>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route>404 - Not Found</Route>
+    </Switch>
   )
 }
 
