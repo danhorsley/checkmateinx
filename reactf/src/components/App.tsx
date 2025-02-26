@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Router, Route, Switch } from "wouter";
-import ChessPuzzle from "./components/ChessPuzzle";
+import ChessPuzzle from "./ChessPuzzle";
 
 function Home() {
   const [message, setMessage] = useState("");
@@ -57,7 +57,6 @@ function PuzzleDetail({ params }: { params: { id: string } }) {
 }
 
 function App() {
-
   return (
     <Router>
       <Switch>
